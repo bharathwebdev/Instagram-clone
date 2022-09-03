@@ -1,4 +1,4 @@
-import { addDoc, collection, doc,onSnapshot, orderBy,query} from 'firebase/firestore';
+import { collection, doc,onSnapshot, orderBy,query} from 'firebase/firestore';
 import { useState } from 'react';
 import ImageUploader from './ImageUploader';
 import './App.css';
@@ -6,12 +6,12 @@ import './App.css';
 import Posts from './components/posts';
 import {db } from './firebse.config';
 import { useEffect } from 'react';
-import { Avatar, Input } from '@mui/material';
+import { Avatar} from '@mui/material';
 import Button from '@mui/material/Button';
-import { confirmPasswordReset, onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged } from 'firebase/auth';
 import Modal from '@mui/material/Modal';
 import {getAuth,createUserWithEmailAndPassword,updateProfile} from 'firebase/auth'
-import { setUserId } from 'firebase/analytics';
+
 import { signOut } from 'firebase/auth';
 import {setDoc} from 'firebase/firestore';
 import { serverTimestamp } from 'firebase/firestore';

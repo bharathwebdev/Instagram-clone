@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Avatar, Button } from '@mui/material';
 import '../components/posts.css';
-import { addDoc, collection, getDoc, onSnapshot, orderBy, query, serverTimestamp } from 'firebase/firestore';
+import { addDoc, collection, onSnapshot, orderBy, query, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebse.config';
 import { getAuth } from 'firebase/auth';
 
